@@ -19,9 +19,11 @@ function Cabecalho () {
                             Home
                         </List>
                     </LinkStyle>
+                <LinkStyle to='/playlist'>
                     <List>
                         PlayLists
                     </List>
+                </LinkStyle>
                 </ListContainer>
             </div>
             <div>

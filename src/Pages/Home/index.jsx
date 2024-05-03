@@ -4,6 +4,15 @@ import Titulo from "../../components/Titulo"
 import high from '../../../public/musics/High - Japa (256).mp3'
 import capaHigh from '../../../public/capas/high.png'
 import { CardSection } from "./Home.styled"
+import YRONE from '../../../public/musics/Sports - You Are The Right One (128).mp3'
+import right from '../../../public/capas/right one.png'
+import dfyou from '../../../public/musics/Die For You ft. Grabbitz -- Official Music Video -- VALORANT Champions 2021 (192).mp3'
+import dfy from '../../../public/capas/fory.png'
+import fashion from '../../../public/musics/Britney Manson - FΛSHION (Single, 2023) (192).mp3'
+import fash from '../../../public/capas/fash.png'
+import bbDoll from '../../../public/musics/Ari Abdul - BABYDOLL (Lyric Video) (192).mp3'
+import babyD from '../../../public/capas/bby doll.png'
+import Rodape from "../../components/Rodape"
 
 
 function Home () {
@@ -15,8 +24,14 @@ function Home () {
         </Titulo>
         <CardSection>
             <CardMusicas imgMusica={capaHigh} tituloMusica='high - JAPA' music={high}/>
-            <CardMusicas />
+            <CardMusicas imgMusica={right} tituloMusica='You Are the right one -  Sports' music={YRONE}/>
+            <CardMusicas imgMusica={dfy} tituloMusica='Die For You - VALORANT' music={dfyou}/>
         </CardSection>
+        <CardSection>
+            <CardMusicas imgMusica={fash} tituloMusica="Fashion - Britney Manson" music={fashion}/> 
+            <CardMusicas imgMusica={babyD} tituloMusica='BABYDOLL - Ari Abdul' music={bbDoll}/>
+        </CardSection>
+        <Rodape/>
         </>
     )
 }

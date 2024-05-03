@@ -19,6 +19,9 @@ function CardMusicas ({imgMusica, tituloMusica,music}) {
         }setMusicPlay(!musicPlay)
     }
 
+
+
+    
     return(
         <Card>
             <div>
@@ -27,14 +30,14 @@ function CardMusicas ({imgMusica, tituloMusica,music}) {
             <StatusBar>
                 <div>
                     {musicPlay? (
-                    <ImgPlay src={pause} onClick={clickStat}></ImgPlay>): (
-                    <ImgPause src={play} onClick={clickStat}></ImgPause>)}
+                    <ImgPause src={pause} onClick={clickStat}></ImgPause>): (
+                    <ImgPlay src={play} onClick={clickStat}></ImgPlay>)}
                 </div>
                 <div>
                     {tituloMusica}
                 </div>
                 <div>
-                    <audio ref={audioMusic} src={music}/>
+                    <audio ref={audioMusic} src={music} />
                 </div>
             </StatusBar>
         </Card>
