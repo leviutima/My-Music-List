@@ -17,7 +17,9 @@ export const StatusBar = styled.div`
 `
 
 export const ImgCapa = styled.img `
-    width: 16.1vw;
+    position: relative;
+    top: 21px;
+    width: 16.08vw;
     border-radius: 10px 10px 0 0;
 `
 
