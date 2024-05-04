@@ -1,6 +1,12 @@
+import Cabecalho from "../../components/Cabecalho"
+import Titulo from "../../components/Titulo"
+
 function Playlist () {
     return(
-        <h1>Página em desenvolvimento</h1>
+        <>
+            <Cabecalho/>
+            <Titulo>MINHAS PLAYLISTS</Titulo>
+        </>
     )
 }
 
