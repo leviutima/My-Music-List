@@ -7,15 +7,31 @@ export const Card = styled.div `
 
 export const StatusBar = styled.div`
     position: relative;
-    display: flex;
+    display: grid;
     align-items: center;
-    gap: 22px;
     border: 1px solid aliceblue;
     border-radius: 0 0 10px 10px;
     width: 17vw;
-    height: 4.5vh;
+    height: 7vh;
     background-color: aliceblue;
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.9);
+`
+
+export const ContainerStyle = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const InputStyle = styled.input`
+    width: 16vw;
+    color: red;
+`
+
+export const ContainerStatusBar = styled.div`
+    display: flex;
+    align-items: center;
+
 `
 
 export const ImgCapa = styled.img `
