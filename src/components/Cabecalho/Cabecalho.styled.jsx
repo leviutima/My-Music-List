@@ -6,6 +6,7 @@ export const Header = styled.header`
     justify-content: space-around;
     align-items: center;
     padding-bottom: 60px;
+
 `
 
 export const Img = styled.img`
