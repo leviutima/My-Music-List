@@ -23,15 +23,51 @@ export const ContainerStyle = styled.div`
     align-items: center;
 `
 
+export const InputWrapper = styled.div`
+    width: 16.5vw;
+    position: relative;
+
+    input[type='range'] {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        background: transparent;
+        outline: none;
+        position: relative;
+        z-index: 1;
+    }
+
+    input[type='range']::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 15px;
+        height: 15px;
+        background-color: #ff0000;
+        border-radius: 50%; 
+        cursor: pointer; 
+}
+
+    input[type='range']::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 4px;
+        background: #ddd; 
+        border-radius: 2px; 
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+    }
+`;
+
 export const InputStyle = styled.input`
-    width: 16vw;
-    color: red;
+    width: 16.5vw;
 `
 
 export const ContainerStatusBar = styled.div`
     display: flex;
     align-items: center;
-
+    gap: 6px;
 `
 
 export const ImgCapa = styled.img `

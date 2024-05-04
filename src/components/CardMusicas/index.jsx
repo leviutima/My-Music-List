@@ -9,6 +9,7 @@ import {
   ContainerStatusBar,
   InputStyle,
   ContainerStyle,
+  InputWrapper,
 } from "./CardMusica.styled";
 import play from "../../../public/images/play.png";
 import pause from "../../../public/images/pause.png";
@@ -52,7 +53,7 @@ function CardMusicas({ imgMusica, tituloMusica, music }) {
         <ImgCapa src={imgMusica} />
       </ContainerStyle>
       <StatusBar>
-        <div>
+        <InputWrapper>
           <InputStyle
             type="range"
             min={0}
@@ -60,7 +61,7 @@ function CardMusicas({ imgMusica, tituloMusica, music }) {
             value={tempoDeDuracao}
             onChange={controleDePonto}
           />
-        </div>
+        </InputWrapper>
         <ContainerStatusBar>
           <div onClick={controleDePause}>
             {musicPlay ? <ImgPause src={pause} /> : <ImgPlay src={play} />}
