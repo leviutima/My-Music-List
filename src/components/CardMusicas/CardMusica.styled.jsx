@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const Card = styled.div `
-    
 `
 
 export const StatusBar = styled.div`
@@ -15,6 +14,10 @@ export const StatusBar = styled.div`
     height: 7vh;
     background-color: aliceblue;
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.9);
+    @media (max-width: 768px) {
+        width: 80vw;
+        height: 10vh;
+    }
 `
 
 export const ContainerStyle = styled.div`
@@ -26,6 +29,9 @@ export const ContainerStyle = styled.div`
 export const InputWrapper = styled.div`
     width: 16.5vw;
     position: relative;
+    @media (max-width: 768px) {
+        width: 79vw; /* Ajuste a largura do wrapper em telas menores */
+    }
 
     input[type='range'] {
         -webkit-appearance: none;
@@ -62,6 +68,10 @@ export const InputWrapper = styled.div`
 
 export const InputStyle = styled.input`
     width: 16.5vw;
+    @media (max-width: 768px) {
+        width: 30vw;
+    }
+    
 `
 
 export const ContainerStatusBar = styled.div`
@@ -77,11 +87,18 @@ flex-shrink: 0;
     width: 17.1vw;
     border-radius: 10px 10px 0 0;
     box-shadow: 3px 0 4px rgba(0, 0, 0, 0.8);
+    @media (max-width: 768px) {
+        width: 80.52vw;
+    }
 `
 
 export const ImgPlay = styled.img`
     width: 1.5vw;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+        width: 9vw;
+    }
 
     &:hover {
         transform: scale(1.1);
@@ -95,6 +112,10 @@ export const ImgPlay = styled.img`
 export const ImgPause = styled.img`
     width: 1.5vw;
     cursor: pointer;
+
+    @media (max-width: 768px){
+         width: 9vw;
+    }
     &:hover {
         transform: scale(1.1);
 

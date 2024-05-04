@@ -1,8 +1,9 @@
-import { Header, Img, LinkStyle, List, ListContainer } from "./Cabecalho.styled"
+import { ButtonStyle, Header, Img } from "./Cabecalho.styled"
 import logo from '../../../public/images/notaMusica.png'
-import wp from '../../../public/images/wp.png'
-import Botao from "../Botao"
 import { Link } from "react-router-dom"
+import Menu from "../Menu"
+import Botao from "../Botao"
+import wp from '../../../public/images/wp.png'
 
 function Cabecalho () {
     return(
@@ -13,27 +14,11 @@ function Cabecalho () {
                 </Link>
             </div>
             <div>
-                <ListContainer>
-                    <LinkStyle to='/'>
-                        <List>
-                            Home
-                        </List>
-                    </LinkStyle>
-                <LinkStyle to='/playlist'>
-                    <List>
-                        PlayLists
-                    </List>
-                </LinkStyle>
-                <LinkStyle>
-                    <List>
-                        Avaliações
-                    </List>
-                </LinkStyle>
-                </ListContainer>
+                <Menu/>
             </div>
-            <div>
+            <ButtonStyle>
                 <Botao texto="fale comigo" imgImport={wp}></Botao>
-            </div>
+            </ButtonStyle>
         </Header>
     )
 }

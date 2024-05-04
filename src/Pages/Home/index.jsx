@@ -3,7 +3,7 @@ import CardMusicas from "../../components/CardMusicas"
 import Titulo from "../../components/Titulo"
 import high from '../../../public/musics/High - Japa (256).mp3'
 import capaHigh from '../../../public/capas/high.png'
-import { CardSection } from "./Home.styled"
+import { CardSection, Container } from "./Home.styled"
 import YRONE from '../../../public/musics/Sports - You Are The Right One (128).mp3'
 import right from '../../../public/capas/right one.png'
 import dfyou from '../../../public/musics/Die For You ft. Grabbitz -- Official Music Video -- VALORANT Champions 2021 (192).mp3'
@@ -23,24 +23,26 @@ import vaNada from '../../../public/capas/valho.png'
 function Home () {
     return(
         <>
-        <Cabecalho/>
-        <Titulo>
-            MINHAS MÚSICAS
-        </Titulo>
-        <CardSection>
-            <CardMusicas imgMusica={capaHigh} tituloMusica='high - JAPA' music={high}/>
-            <CardMusicas imgMusica={right} tituloMusica='You Are the right one -  Sports' music={YRONE}/>
-            <CardMusicas imgMusica={dfy} tituloMusica='Die For You - VALORANT' music={dfyou}/>
-        </CardSection>
-        <CardSection>
-            <CardMusicas imgMusica={fash} tituloMusica="Fashion - Britney Manson" music={fashion}/> 
-            <CardMusicas imgMusica={babyD} tituloMusica='BABYDOLL - Ari Abdul' music={bbDoll}/>
-            <CardMusicas imgMusica={lagum} tituloMusica='Não Vou Mentir - Lagum,liu'music={nMentir}/>
-        </CardSection>
-        <CardSection>
-            <CardMusicas imgMusica={pngMortals} tituloMusica='Mortals - Warriyo' music={mortals} />
-            <CardMusicas imgMusica={vaNada} tituloMusica='Eu não Valho Nada - Lagum, KVSH' music={valho}/>
-        </CardSection>
+        <Container>
+            <Cabecalho/>
+            <Titulo>
+                MINHAS MÚSICAS
+            </Titulo>
+            <CardSection>
+                <CardMusicas imgMusica={capaHigh} tituloMusica='high - JAPA' music={high}/>
+                <CardMusicas imgMusica={right} tituloMusica='You Are the right one -  Sports' music={YRONE}/>
+                <CardMusicas imgMusica={dfy} tituloMusica='Die For You - VALORANT' music={dfyou}/>
+            </CardSection>
+            <CardSection>
+                <CardMusicas imgMusica={fash} tituloMusica="Fashion - Britney Manson" music={fashion}/> 
+                <CardMusicas imgMusica={babyD} tituloMusica='BABYDOLL - Ari Abdul' music={bbDoll}/>
+                <CardMusicas imgMusica={lagum} tituloMusica='Não Vou Mentir - Lagum,liu'music={nMentir}/>
+            </CardSection>
+            <CardSection>
+                <CardMusicas imgMusica={pngMortals} tituloMusica='Mortals - Warriyo' music={mortals} />
+                <CardMusicas imgMusica={vaNada} tituloMusica='Eu não Valho Nada - Lagum, KVSH' music={valho}/>
+            </CardSection>
+        </Container>
         <Rodape/>
         </>
     )

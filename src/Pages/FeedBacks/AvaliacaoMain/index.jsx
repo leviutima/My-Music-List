@@ -1,11 +1,11 @@
-import { Header } from "../../../components/Cabecalho/Cabecalho.styled"
+import Cabecalho from "../../../components/Cabecalho"
 import Titulo from "../../../components/Titulo"
 
 function Avaliacao () {
     return(
         <>
-            <Header/>
-            <Titulo></Titulo>
+            <Cabecalho/>
+            <Titulo>MINHAS AVALIAÇÕES</Titulo>
         </>
     )
 }

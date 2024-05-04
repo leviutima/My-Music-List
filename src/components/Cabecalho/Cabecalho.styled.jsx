@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 
 export const Header = styled.header`
@@ -7,23 +7,22 @@ export const Header = styled.header`
     align-items: center;
     padding-bottom: 60px;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding-bottom: 10px; 
+    }
+    
 `
 
 export const Img = styled.img`
     width: 7vw;
+    @media (max-width: 768px) {
+        width: 16vw;
+    }
 `
 
-export const ListContainer = styled.ul`
-    display: flex;
-    gap: 75px;
-    cursor: pointer;
-`
-
-export const List = styled.li`
-    list-style: none;
-`
-
-export const LinkStyle = styled(Link)`
-    text-decoration: none;
-    color: inherit;
+export const ButtonStyle = styled.div `
+    @media (max-width: 768px) {
+        display: none;
+    }
 `

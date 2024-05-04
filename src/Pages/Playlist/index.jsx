@@ -1,4 +1,5 @@
 import Cabecalho from "../../components/Cabecalho"
+import Rodape from "../../components/Rodape"
 import Titulo from "../../components/Titulo"
 
 function Playlist () {
@@ -6,6 +7,7 @@ function Playlist () {
         <>
             <Cabecalho/>
             <Titulo>MINHAS PLAYLISTS</Titulo>
+            <Rodape/>
         </>
     )
 }
