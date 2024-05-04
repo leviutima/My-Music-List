@@ -35,7 +35,10 @@ export const Container = styled.section `
         transition: .7s;
     }
 
-        
+        a {
+            text-decoration: none;
+            color: white;
+        }    
 
         ul {
         display: flex;

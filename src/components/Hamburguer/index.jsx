@@ -1,6 +1,7 @@
 import { IoClose } from "react-icons/io5";
 import PropTypes from 'prop-types'
 import { Container } from "./Hambuerguer.styled"
+import { Link } from "react-router-dom";
 
 function Hamburguer ({menuVisible, setMenuVisible, menuOpen}) {
     return(
@@ -8,10 +9,18 @@ function Hamburguer ({menuVisible, setMenuVisible, menuOpen}) {
         <Container menuOpen={menuVisible}>
             <IoClose size={45} onClick={() => setMenuVisible(false)}/>
                 <ul>
-                    <li>HOME</li>
-                    <li>PLAYLIST</li>
-                    <li>AVALIAÇÃO</li>
-                    <li>FALE COMIGO</li>
+                    <Link to='/'>
+                        <li>HOME</li>
+                    </Link>
+                    <Link to='/playlist'>
+                        <li>PLAYLIST</li>
+                    </Link>
+                    <Link to='avaliacao'>
+                        <li>AVALIAÇÃO</li>
+                    </Link>
+                    <a href="https://w.app/LeviUtima">
+                        <li>FALE COMIGO</li>
+                    </a>
                 </ul>
                 
         </Container>
