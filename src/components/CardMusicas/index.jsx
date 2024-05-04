@@ -19,7 +19,15 @@ function CardMusicas ({imgMusica, tituloMusica,music}) {
         }setMusicPlay(!musicPlay)
     }
 
+    const tempoMusic = () => {
+        const audio = audioMusic.current;
+      };
 
+      const controlador = (e) => {
+        const audio = audioMusic.current;
+        const controle = e.target.value;
+        audio.currentTime = controle;
+      };
 
     
     return(
@@ -29,6 +37,13 @@ function CardMusicas ({imgMusica, tituloMusica,music}) {
             </div>
             <StatusBar>
                 <div>
+                    <input type="range" 
+                    min={0} 
+                    max={audioMusic.current ? audioMusic.current.duration: 0}
+                    value={audioMusic.current ? audioMusic.current.currentTime:0}
+                    onChange={controlador}/>
+                </div>
+                <div>
                     {musicPlay? (
                     <ImgPause src={pause} onClick={clickStat}></ImgPause>): (
                     <ImgPlay src={play} onClick={clickStat}></ImgPlay>)}
@@ -37,7 +52,7 @@ function CardMusicas ({imgMusica, tituloMusica,music}) {
                     {tituloMusica}
                 </div>
                 <div>
-                    <audio ref={audioMusic} src={music} />
+                    <audio ref={audioMusic} src={music} onTimeUpdate={tempoMusic}/>
                 </div>
             </StatusBar>
         </Card>

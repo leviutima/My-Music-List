@@ -24,6 +24,11 @@ function Cabecalho () {
                         PlayLists
                     </List>
                 </LinkStyle>
+                <LinkStyle>
+                    <List>
+                        Avaliações
+                    </List>
+                </LinkStyle>
                 </ListContainer>
             </div>
             <div>
