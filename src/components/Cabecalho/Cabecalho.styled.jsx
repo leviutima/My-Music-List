@@ -8,11 +8,13 @@ export const Header = styled.header`
     padding-bottom: 60px;
 
     @media (max-width: 768px) {
-        flex-direction: column;
+        display: flex;
         padding-bottom: 10px; 
     }
     
 `
+
+
 
 export const Img = styled.img`
     width: 7vw;
@@ -24,5 +26,11 @@ export const Img = styled.img`
 export const ButtonStyle = styled.div `
     @media (max-width: 768px) {
         display: none;
+    }
+`
+
+export const HamburguerSection = styled.section`
+    @media(min-width: 780px){
+    display: none;
     }
 `

@@ -20,7 +20,6 @@ function Menu () {
                             Avaliações
                         </List>
                     </LinkStyle>
-                    
             </ListContainer>
         </Container>
     )

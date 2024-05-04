@@ -1,4 +1,4 @@
-import Cabecalho from "../../components/Cabecalho"
+
 import CardMusicas from "../../components/CardMusicas"
 import Titulo from "../../components/Titulo"
 import high from '../../../public/musics/High - Japa (256).mp3'
@@ -20,11 +20,13 @@ import pngMortals from '../../../public/capas/mortal.png'
 import valho from '../../../public/musics/Eu Não Valho Nada (192).mp3'
 import vaNada from '../../../public/capas/valho.png'
 
+
 function Home () {
     return(
         <>
+
         <Container>
-            <Cabecalho/>
+
             <Titulo>
                 MINHAS MÚSICAS
             </Titulo>

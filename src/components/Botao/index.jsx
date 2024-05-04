@@ -1,23 +1,24 @@
 import PropTypes from 'prop-types'
-import { Button, Img } from './Botao.styled'
+import { Button, Img, Rota,  } from './Botao.styled'
 
-
-function Botao ({texto, imgImport}) {
+function Botao ({ children, imgImport, url }) {
     return(
+        <Rota href={url} >
         <Button>
             <div>
                 <Img src={imgImport}></Img>
             </div>
             <div>
-                {texto}
+                {children}
             </div>
         </Button>
+        </Rota>
     )
 }
 
 Botao.propTypes = {
-    texto: PropTypes.string.isRequired,
-    imgImport: PropTypes.string
-}
+    children: PropTypes.string.isRequired,
+    imgImport: PropTypes.string,
+    url: PropTypes.string,}
 
 export default Botao
