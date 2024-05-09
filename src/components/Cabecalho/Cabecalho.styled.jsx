@@ -27,10 +27,15 @@ export const ButtonStyle = styled.div `
     @media (max-width: 768px) {
         display: none;
     }
+    @media(max-width: 1185px){
+        display: none;
+    }
 `
 
 export const HamburguerSection = styled.section`
-    @media(min-width: 780px){
+
+    @media(min-width: 1185px){
     display: none;
     }
+    
 `

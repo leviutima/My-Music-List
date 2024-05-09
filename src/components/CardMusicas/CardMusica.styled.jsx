@@ -18,6 +18,10 @@ export const StatusBar = styled.div`
         width: 80vw;
         height: 10vh;
     }
+    @media (max-width: 1155px) and (min-width: 768px){
+        width: 50vw;
+        height: 10vh;
+    }
 `
 
 export const ContainerStyle = styled.div`
@@ -31,6 +35,9 @@ export const InputWrapper = styled.div`
     position: relative;
     @media (max-width: 768px) {
         width: 79vw; /* Ajuste a largura do wrapper em telas menores */
+    }
+    @media (max-width: 1155px) and (min-width: 768px){
+        width: 49vw;
     }
 
     input[type='range'] {
@@ -72,6 +79,7 @@ export const InputStyle = styled.input`
         width: 30vw;
     }
     
+    
 `
 
 export const ContainerStatusBar = styled.div`
@@ -90,6 +98,9 @@ flex-shrink: 0;
     @media (max-width: 768px) {
         width: 80.52vw;
     }
+    @media (max-width: 1155px) and (min-width: 768px){
+        width: 50vw;
+    }
 `
 
 export const ImgPlay = styled.img`
@@ -98,6 +109,9 @@ export const ImgPlay = styled.img`
 
     @media (max-width: 768px) {
         width: 9vw;
+    }
+    @media (max-width: 1155px) and (min-width: 768px){
+        width: 5vw;
     }
 
     &:hover {
@@ -115,6 +129,9 @@ export const ImgPause = styled.img`
 
     @media (max-width: 768px){
          width: 9vw;
+    }
+    @media (max-width: 1155px) and (min-width: 768px){
+        width: 5vw;
     }
     &:hover {
         transform: scale(1.1);

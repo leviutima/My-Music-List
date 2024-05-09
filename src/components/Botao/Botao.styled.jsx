@@ -12,8 +12,8 @@ export const Button = styled.div`
     width: 8vw;
     height: 4.5vh;
     cursor: pointer;
-    @media (max-width: 768px) {
-
+    @media (max-width: 1512px)and (min-width: 1185px){
+        width: 10vw;
     }
 `
 

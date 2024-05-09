@@ -17,6 +17,9 @@ export const List = styled.li`
     @media (max-width: 768px) {
         display: none;
     }
+    @media(max-width: 1185px){
+        display: none;
+    }
 `
 
 export const LinkStyle = styled(Link)`

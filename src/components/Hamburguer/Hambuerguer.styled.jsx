@@ -14,7 +14,8 @@ export const Container = styled.section `
     align-items: center;
     justify-content: center;
 
-    @media (min-width:780px) {
+
+    @media (min-width:1185px) {
         display: none;
     }
 
@@ -23,7 +24,7 @@ export const Container = styled.section `
 
     opacity: 0;
     pointer-events: none;
-    transform: translateX(50px);
+    transition: top 0.3s ease;
 
     transition: .5s;
     > svg {
@@ -56,7 +57,7 @@ export const Container = styled.section `
         ${({ menuOpen }) => menuOpen && css`
         opacity: 1;
         pointer-events: auto;
-        transform: translateX(0px);
+        top: 0;
         
         > svg {
         transform: rotate(0deg);   
