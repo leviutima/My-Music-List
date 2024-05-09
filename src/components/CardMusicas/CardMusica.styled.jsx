@@ -22,6 +22,18 @@ export const StatusBar = styled.div`
         width: 50vw;
         height: 10vh;
     }
+    @media (max-height: 750px) and (min-height: 290px){
+        height: 10vh;
+    }
+    @media (max-height: 550px) and (min-height: 370px){
+        height: 15vh;
+    }
+    @media (max-height: 369px){
+        height: 20vh;
+    }
+    @media(max-height: 260px) and(min-height: 166px) {
+        height: 30vh;
+    }
 `
 
 export const ContainerStyle = styled.div`
